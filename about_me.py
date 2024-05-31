@@ -8,21 +8,35 @@ Usage:
 def main():
     # Step 2: Create a complex data structure that holds information about me
     about_me = {
+        "Pizza_toppings" :["Chicken","Onion","Tomato"],
         # TODO: Put full name into data structure
+        "Full_name" : "Yuvrajsinh Khengar" ,
         # TODO: Put student ID into data structure
+        "Student_ID" : "10319213" ,
         # TODO: Put list of 3 pizza toppings into data structure
-        'movies': [
+        "Pizza_toppings" :["Chicken","Onion","Tomato"],
             # TODO: Change this to a movie you like
+            'movies': [
             {
-                'title': 'The empire strikes back',
+                'title': 'Dune ',
                 'genre': 'sci-fi'
             },
             # TODO: Add one more movie
+            {
+                'tile': 'Dune 2',
+                'genre': 'sci-fi'
+            }
         ]
     }
 
     # Step 3: Print student name and ID
-    print_student_name_and_id(about_me)
+def print_student_name_and_id(about_me):
+    Full_name= about_me["full_name"]
+    first_name= Full_name.split()[0]
+    student_id= about_me["Student_id"]
+    Full_name= about_me["Student_id"]
+    print(f"My name is {Full_name}, but you can call me Legend {first_name}.\nMy student ID is {student_id}.")
+    return
 
     # Step 4: Print a bullet list of pizza toppings
     print_pizza_toppings(about_me)
